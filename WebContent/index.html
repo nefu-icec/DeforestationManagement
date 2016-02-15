@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>森林采伐督查管理系统</title>
+		<link rel="Shortcut Icon" href="images/favicon.ico"> 
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div style="background:url(images/topbg.jpg) top repeat-x; margin:0;">
+			<img src="images/head.jpg" class="image"><br>
+			<div id="container">
+				<form action="LoginServlet?task=login" method="post"  id="index" name="index"> 
+			         <p>
+			         	<select name="loginMethod">
+			         		<option value="name" selected>用户名</option>
+			         		<option value="id">用户ID</option>
+			         		<option value="email">Email</option>
+			         	</select>
+						<input type="text" name="loginInfo"  value="">
+			         </p>
+			         <p>
+			         	密码：<input type="password" name="password" value="">
+			         </p>
+			         <p>
+				         <input type="submit" value="登录" >&nbsp; 
+				         <input type="reset" value="重置">
+				         <button type="button"  onClick="window.location.href='public/register.html'">注册</button>
+			         </p>
+			    </form>	
+			</div>
+		</div>
+	</body>
+</html>

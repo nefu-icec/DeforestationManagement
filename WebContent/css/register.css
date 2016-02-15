@@ -1,0 +1,53 @@
+		*{
+		margin:0;
+		padding;
+		}
+		.image{
+			display:block;
+			margin:0 auto;
+		}
+		#container{
+			position: relative;
+			width: 910px;
+			height: 410px;
+			margin: 0 auto;
+			background: url(../images/guestRegister.png) no-repeat;
+		}
+		#wapper{
+			position: relative;
+			width: 910px;
+			height: 400px;
+			margin: 0 auto;
+			background: url(../images/registerSuccessBg.png) no-repeat;
+		}
+		#wapper .infomation{
+			padding:10px;
+			width: 385px;
+			height: 270px;
+			position: absolute;
+			top:105px;
+			right: 0px;
+		}
+		form{
+			padding:10px;
+			width: 385px;
+			height: 270px;
+			position: absolute;
+			top:105px;
+			right: 0px;
+		}
+		.btns{
+			width: 60px;
+			height: 25px;
+			border-radius: 3px;
+		}
+		p{
+			margin:10px;
+			width: 310px;
+			height: 35px;
+			border-radius: 3px;
+			margin-left: 5px;
+		}
+		p>label{
+			padding:10px;
+		}

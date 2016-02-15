@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>访客注册</title>
+		<link rel="stylesheet" href="../css/register.css">
+	</head>
+	<body>
+		<div style="background:url(../images/topbg.jpg) top repeat-x; margin:0;">
+			<img src="../images/head.jpg" class="image"><br>
+			<div id="container">
+				<form action="../UserServlet?task=register" method="post" name="login">
+					<p>
+						<label for="username">用&nbsp;户&nbsp;名:&nbsp;</label>
+						<input type="text" name="uname">
+					</p>
+				
+					<p>
+						<label for="password">密&nbsp;&nbsp;&nbsp;码：&nbsp;</label>
+						<input type="password" name="password">&nbsp;*
+					</p>
+				
+					<p>
+						<label for="ConfirmPassword">验证密码：</label>
+						<input type="password" name="ConfirmPassword" onblur="confirm()">&nbsp;*
+					</p>
+				
+					<p>
+						<label for="email">电子邮箱：</label>
+						<input type="text" name="email">
+					</p>
+					<div>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="submit" value="注册" class="btns">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" class="btns">	
+					</div>					
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	function confirm()
+	{
+	    var t1,t2;
+	    t1=login.password.value;
+	    t2=login.ConfirmPassword.value;
+	    if(t1!=t2) 
+		   {
+	 	   		alert("密码不一致");
+		   }
+	 }
+</script>	  
